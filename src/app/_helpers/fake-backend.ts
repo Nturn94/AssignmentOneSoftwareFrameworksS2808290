@@ -13,8 +13,19 @@ let users = JSON.parse(localStorage.getItem('users')) || [
         "password" : "hello1234",
         "firstName" : "Nathan",
         "lastName" : "Turnbull",
+        "userlevel" : "3"
 
-    }
+    },
+
+    {
+        "username" : "Daniel101",
+        "id": "2",
+        "password" : "goodbye123",
+        "firstName" : "Daniel",
+        "lastName" : "Yalg",
+        "userlevel" : "1"
+
+    },
     
    ];
 
@@ -57,7 +68,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
                 username: user.username,
                 firstName: user.firstName,
                 lastName: user.lastName,
-                token: 'fake-jwt-token'
+                token: 'fake-jwt-token',
+                userlevel: user.userlevel
             })
         }
 

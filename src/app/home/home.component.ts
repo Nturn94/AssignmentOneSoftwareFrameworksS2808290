@@ -31,4 +31,12 @@ export class HomeComponent implements OnInit {
             .pipe(first())
             .subscribe(users => this.users = users);
     }
+
+    // myFunction() {
+    //     var x = document.getElementById("myDIV");
+    //     if (this.currentUser.userlevel >= 2) {
+    //       x.style.display = "show link";
+    //     } 
+    //   }
 }
+
